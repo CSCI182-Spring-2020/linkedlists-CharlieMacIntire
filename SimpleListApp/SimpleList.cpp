@@ -1,17 +1,7 @@
 #include "Node.h"
 #include "SimpleList.h"
-SimpleList::~SimpleList() 
-{
-	Node* temp;
-	while (head != NULL)
-	{
-		temp = head; 
-		head = temp->next;
-		delete temp;
-	}
-}
 
-void SimpleList::QueueItem(int newValue)
+/*void SimpleList::QueueItem(int newValue)
 {
 	Node* temp = new Node; 
 	temp->value = newValue;
@@ -29,9 +19,9 @@ void SimpleList::QueueItem(int newValue)
 		tail = temp;
 	}
 	cout << "Queued Item" << endl;
-}
+}*/
 
-int SimpleList::DequeueItem()
+/*int SimpleList::DequeueItem()
 {
 	//Is empty?
 	if (head == NULL)
@@ -48,7 +38,7 @@ int SimpleList::DequeueItem()
 	cout << "Dequeued Node" << endl;
 	return nReturn;
 
-}
+}*/
 
 void SimpleList::Push(int data)
 {
@@ -87,4 +77,13 @@ int SimpleList::Pop()
 	return nReturn;
 }
 
-
+SimpleList::~SimpleList()
+{
+	Node* temp;
+	while (head != NULL)
+	{
+		temp = head;
+		head = temp->next;
+		delete temp;
+	}
+}
