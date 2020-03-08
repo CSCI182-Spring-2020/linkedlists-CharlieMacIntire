@@ -10,6 +10,7 @@ int main()
 
     SimpleList s1;
     s1.QueueItem(100);
+    s1.DisplayList();
 
    cout << s1.DequeueItem() << endl;
 

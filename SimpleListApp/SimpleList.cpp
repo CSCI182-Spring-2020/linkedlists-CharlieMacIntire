@@ -78,6 +78,28 @@ int SimpleList::Pop()
 	return nReturn;
 }
 
+
+void SimpleList::DisplayList()
+{
+
+	if (head == NULL)
+		return;
+
+	Node* temp = head;
+	
+	while (1)
+	{
+		if (temp == NULL)
+			return;
+
+		cout << temp->value << endl;
+
+		temp = temp->next;
+
+	}
+
+}
+
 SimpleList::~SimpleList()
 {
 	Node* temp;
@@ -88,3 +110,5 @@ SimpleList::~SimpleList()
 		delete temp;
 	}
 }
+
+
