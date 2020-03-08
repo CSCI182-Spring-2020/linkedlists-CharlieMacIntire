@@ -3,19 +3,18 @@
 
 #include <iostream>
 #include "SimpleList.h"
-#include "SimpleList.cpp"
+
 
 int main()
 {
 
-   // SimpleList s1;
-    //s1.QueueItem(100);
+    SimpleList s1;
+    s1.QueueItem(100);
 
-   // cout << s1.DequeueItem() << endl;
+   cout << s1.DequeueItem() << endl;
 
     SimpleList s2;
     s2.Push(12);
-    s2.Push(6);
     s2.Pop();
 }
 

@@ -8,7 +8,7 @@ class SimpleList
 {
 private:
 	Node* head, * tail;
-	Node* top;
+	
 
 public:
 	SimpleList()
